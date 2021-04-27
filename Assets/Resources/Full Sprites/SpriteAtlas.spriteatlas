@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 12979d7f0002347b48930968d54d888d, type: 3}
-    totalSpriteSurfaceArea: 1021505
+    totalSpriteSurfaceArea: 1023809
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -743,6 +743,7 @@ SpriteAtlas:
   - {fileID: 5390515300888648957, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: 6920113330292810215, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: 2436257875298597116, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
+  - {fileID: 8005497525922160929, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: -644445067326750008, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: 7142232159612772698, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: 7394542575138104024, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
@@ -759,6 +760,7 @@ SpriteAtlas:
   - {fileID: -1395730728442006793, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: -6427750904229235633, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: -3201853498770123240, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
+  - {fileID: 2821945214121612769, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: -6436125771106605021, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: 79073941841233497, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: -5332163973513142145, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
@@ -767,6 +769,7 @@ SpriteAtlas:
   - {fileID: 2912210153998580527, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: 4297377078345013919, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: -4980151530589433498, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
+  - {fileID: 9078980905208352353, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: -1230642410911957912, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: -7678643800723079021, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: 8143648933078721799, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
@@ -2139,6 +2142,7 @@ SpriteAtlas:
   - Overworld_162
   - Overworld_114
   - Overworld_802
+  - Overworld_1081
   - Overworld_1049
   - Overworld_1031
   - Overworld_1025
@@ -2155,6 +2159,7 @@ SpriteAtlas:
   - Overworld_116
   - Overworld_108
   - Overworld_800
+  - Overworld_1083
   - Overworld_1033
   - Overworld_1023
   - Overworld_631
@@ -2163,6 +2168,7 @@ SpriteAtlas:
   - Overworld_117
   - Overworld_107
   - Overworld_801
+  - Overworld_1082
   - Overworld_1022
   - Overworld_1018
   - Overworld_630
