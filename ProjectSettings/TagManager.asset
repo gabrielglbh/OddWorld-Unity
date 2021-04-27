@@ -11,6 +11,8 @@ TagManager:
   - TrialExit
   - GameOverMenu
   - NPC
+  - Menu
+  - Heart
   layers:
   - Default
   - TransparentFX

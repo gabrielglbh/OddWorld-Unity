@@ -8,30 +8,30 @@ Principales funciones a destacar:
 
 - Se han creado las animaciones mediante Animator para el Player, Enemy y varios objetos. Se han creado las Transitions y Conditions con el Animator (con nodos) y los Blend Trees con sus Motions y Parámetros para los distintos estados del objeto y su determinación de movimiento.
 
-- Se crea un Sprite Atlas para eliminar los errores de Unity al tratar los sprites como objetos 3D.
+- Se ha creado un Sprite Atlas para eliminar los errores de Unity al tratar los sprites como objetos 3D.
 
 - Se ha creado un TileMap para crear el mapa: un mapa de colisiones (TileMap Collider 2D con Composite Collider) y un mapa de suelo por donde el jugador puede moverse.
 
-- La cámara está limitada al TileMap de manera explícita en el código.
+- La cámara está limitada al TileMap en el que el jugador esté de manera explícita en el código.
 
-- Hay varias pantallas y la cámara se mueve entre ellas con transiciones al estilo Zelda.
+- Hay 4 TileMaps distintos: uno por cada 'habitación'. La cámara se mueve entre ellas con transiciones al estilo The Legend of Zelda: A Link to the Past.
 
 - Se han creado HitBoxes para las 4 animaciones de ataque con Polygon Collider 2D. La hitbox se activa en la animación y puede empujar y dañar a los enemigos.
 
-- Los enemigos y el jugador tienen Hurtbox con Collision Box 2D.
+- Los enemigos y el jugador tienen Hurtbox con Collision Box 2D, de tal manera que el jugador pueda dañar al enemigo y el enemigo al jugador.
 
-- Se han creado cuadros de dialogo con distintos elementos del juego (señales, estatuas, cadáveres) con los que interactuar.
+- Se han creado cuadros de dialogo con distintos elementos del juego (señales, estatuas, cadáveres, NPCs) con los que interactuar en el mundo.
 
-- Los jarrones y las briznas de hierba se pueden romper.
+- Los jarrones y las briznas de hierba se pueden romper. Tienen 1 posibilidad entre 3 de albergar un corazón para que el jugador recupere la vida.
 
 - IA enemigos simple: Te persiguen si estás dentro de su rango. Animaciones añadidas.
 
-- Se han usado ScriptableObjects para definir algunas variables globales de los actores del juego: vida del enemigo, vida del jugador, contador de enemigos y puntuación. La ventaja es que se puede cambiar la vida de todos los enemigos desde un solo sitio.
+- Se han usado ScriptableObjects para definir algunas variables globales (estáticas) de los actores del juego: vida del enemigo, vida del jugador, contador de enemigos y puntuación. La ventaja de estos objetos es que se puede cambiar el valor de estas variables desde un solo sitio y su valor se preserva a lo largo de todo el runtime del juego y se comparte por clases.
 
-- El jugador tiene 3 vidas. El sistema de vida, daño de enemigos, spawn de enemigos, sistema de puntuación y el game over están hechos con Listeners, UnityEvents y ScriptableObjects.
+- El jugador tiene 5 vidas. El sistema de vida, daño de enemigos, spawn de enemigos, sistema de puntuación y el game over están hechos con Listeners, UnityEvents y ScriptableObjects. Básicamente, hay objetos que están observando (Listeners) a ciertos eventos personalizados (Event ScriptableObjects) y cuando cierto objeto notifica el evento, los objetos que estaban observándolo, ejecutan un código cualquiera (UnityEvent).
 
-- Hay un spawn de enemigos el cual el jugador debe aguantar lo máximo posible para conseguir la máxima puntuación.
+- Se ha creado un spawn de enemigos (el castillo/la Prueba) el cual el jugador debe aguantar lo máximo posible para conseguir la máxima puntuación, siempre pudiendo salir de esa 'habitación' cuando se quiera.
 
-- Creado menú de Game Over para volver a empezar desde donde se ha muerto o salir del juego.
+- Se ha creado menú de Game Over para volver a empezar desde donde se ha muerto o salir del juego en el que se muestra la puntuación total.
 
-- Añadidos NPC con los que interactuar con diálogo. Hay dos tipos: NPCs que se mueven por un camino predeterminado y NPC que simplemente se quedan en su sitio. Se interactúa con ellos automáticamente al pasar cerca.
+- Se han añadido NPCs con los que interactuar con diálogos. Hay dos tipos: NPCs que se mueven por un camino predeterminado y NPC que simplemente se quedan en su sitio. Se interactúa con ellos automáticamente al pasar cerca.

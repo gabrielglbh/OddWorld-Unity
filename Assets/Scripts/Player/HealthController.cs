@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 // Clase para manejar y administrar los corazones en la UI y
 // lanzar los eventos necesarios (Canvas > HeartContainers)
-public class HeartController : MonoBehaviour
+public class HealthController : MonoBehaviour
 {
 
     public Image[] hearts;
@@ -29,7 +29,7 @@ public class HeartController : MonoBehaviour
     // PlayerHealthSignal, el cual está adherido en el PlayerController y 
     // la cual notifica cuando el jugador ha sido dañado por un enemigo en DealDamage(). 
     // Cuando esta notifique, esta función se ejecutará.
-    public void UpdateUI() 
+    public void UpdateUIOnHit() 
     {
         float tempHealth = playerHealth.RuntimeValue / 2;
         for (int x = 0; x < containers.initialValue; x++) 
@@ -46,5 +46,14 @@ public class HeartController : MonoBehaviour
                 hearts[x].sprite = halfHeart;
             }
         }
+    }
+
+    // Función lanzada con la notificación de la señal PlayerHealthGained
+    // Actualiza la UI con un nuevo contenedor
+    public void UpdateUIOnGain()
+    {
+        float tempHealth = playerHealth.RuntimeValue / 2;
+        playerHealth.RuntimeValue += 1;
+        // TODO: Manage health gain
     }
 }
