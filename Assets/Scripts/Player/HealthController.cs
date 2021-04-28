@@ -13,7 +13,7 @@ public class HealthController : MonoBehaviour
     public Sprite halfHeart;
     public Sprite emptyHeart;
     public FloatValue containers;
-    public FloatValue playerHealth;
+    public FloatValue currentHealth;
 
     void Start()
     {
@@ -31,7 +31,7 @@ public class HealthController : MonoBehaviour
     // Cuando esta notifique, esta función se ejecutará.
     public void UpdateUIOnHit() 
     {
-        float tempHealth = playerHealth.RuntimeValue / 2;
+        float tempHealth = currentHealth.RuntimeValue / 2;
         for (int x = 0; x < containers.initialValue; x++) 
         {
             if (x <= tempHealth - 1)
@@ -52,8 +52,20 @@ public class HealthController : MonoBehaviour
     // Actualiza la UI con un nuevo contenedor
     public void UpdateUIOnGain()
     {
-        float tempHealth = playerHealth.RuntimeValue / 2;
-        playerHealth.RuntimeValue += 1;
-        // TODO: Manage health gain
+        if (currentHealth.RuntimeValue != currentHealth.initialValue)
+        {
+            float containers = currentHealth.RuntimeValue / 2;
+            if (currentHealth.RuntimeValue % 2 == 0)
+            {
+                hearts[(int) containers].sprite = fullHeart;
+            }
+            else
+            {
+                float currentContainer = containers + 0.5f;
+                hearts[(int) currentContainer - 1].sprite = fullHeart;
+                hearts[(int) currentContainer].sprite = halfHeart;
+            }
+            currentHealth.RuntimeValue += 2;
+        }
     }
 }

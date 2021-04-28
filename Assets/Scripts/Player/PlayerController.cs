@@ -96,11 +96,16 @@ public class PlayerController : MonoBehaviour
             playerHealthSignal.Notify();
             if (currentHealth.RuntimeValue == 0) 
             {
-                gameOver.RuntimeValue = true;
-                gameOverSignal.Notify();
-                this.gameObject.SetActive(false);
+                GameOver();
             }
         }
+    }
+
+    private void GameOver()
+    {
+        gameOver.RuntimeValue = true;
+        gameOverSignal.Notify();
+        this.gameObject.SetActive(false);
     }
 
     // Llamado al notificarse EnemyDefeatedSignal desde EnemyController al morir un enemigo,

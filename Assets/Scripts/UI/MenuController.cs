@@ -6,35 +6,35 @@ using UnityEngine.UI;
 public class MenuController : MonoBehaviour
 {
     public GameObject menu;
+    public GameObject controls;
     public Text data;
     public Text elapsedTime;
+    public Text points; 
     public FloatValue currentPoints;
     public GameObject player;
     public FloatValue containers;
     public FloatValue playerHealth;
     public CustomSignal health;
-    private CameraMovement cam;
-
-    void Start()
-    {
-        cam = GetComponent<CameraMovement>();
-    }
 
     public void CreateMenu()
     {
         menu.SetActive(true);
+        controls.SetActive(false);
         data.text = "Tiempo en la Prueba: " + elapsedTime.text + " segundos " +
                     "\nPuntos Totales: " + currentPoints.RuntimeValue;
     }
 
+    // Se hace reset de todos los parámetros
     public void StartAgain()
     {
         menu.SetActive(false);
+        controls.SetActive(true);
         if (this.gameObject.CompareTag("GameOverMenu"))
         {
             player.SetActive(true);
-            containers.RuntimeValue = 3;
-            playerHealth.RuntimeValue = 6;
+            containers.RuntimeValue = 5;
+            playerHealth.RuntimeValue = 10;
+            points.text = "000";
             health.Notify();
         }
     }

@@ -24,7 +24,7 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 - Se han creado cuadros de dialogo con distintos elementos del juego (señales, estatuas, cadáveres, NPCs) con los que interactuar en el mundo.
 
-- Los jarrones y las briznas de hierba se pueden romper. Tienen 1 posibilidad entre 3 de albergar un corazón para que el jugador recupere la vida.
+- Los jarrones y las briznas de hierba se pueden romper. Tienen 1 posibilidad entre 3 de albergar un corazón para que el jugador recupere la vida. Siempre se recupera vida con un corazón completo.
 
 - IA enemigos simple: Te persiguen si estás dentro de su rango. Animaciones añadidas.
 
@@ -40,11 +40,11 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 ## TODOs
 
-- Fix Camera, Fix Canvas Heart Containers, Fix Scene Message on TrialEnd en móvil
-
-- Añadir vida al jugador al coger un contendor de corazón
-
 - Añadir un menú de inicio para jugar
+
+- Sprites personalizados con Piskel para los NPCs
+
+- Añadir escena de la casa por dentro
 
 - Añadir icono de App
 

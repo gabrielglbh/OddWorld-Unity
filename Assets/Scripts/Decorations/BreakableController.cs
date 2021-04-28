@@ -25,7 +25,7 @@ public class BreakableController : MonoBehaviour
     // aparece o no un contenedor de corazón
     IEnumerator SetInactiveRoutine()
     {
-        decideIfHeartAppears = UnityEngine.Random.Range(0, 3);
+        decideIfHeartAppears = Random.Range(0, 2);
         yield return new WaitForSeconds(0.3f);
         animator.enabled = false;
         this.gameObject.GetComponent<BoxCollider2D>().enabled = false;

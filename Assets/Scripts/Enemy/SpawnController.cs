@@ -10,6 +10,7 @@ public class SpawnController : MonoBehaviour
     public FloatValue currentPoints;
     public BoolValue isInTrial;
     public Text elapsedTime;
+    public Text points;
     public Transform[] spawnPoints;
     private float spawnDelay = 3f; 
     private float maxEnemies = 12f;
@@ -91,6 +92,9 @@ public class SpawnController : MonoBehaviour
         }
     }
 
+
+    // Pinta SceneDialog con los puntos y tiempo transcurrido en la Prueba
+    // Después, hace reset de esos parámetros
     private IEnumerator ShowDialogBox()
     {
         dialogText.gameObject.SetActive(true);
@@ -106,6 +110,7 @@ public class SpawnController : MonoBehaviour
                 "\nPuntos Totales: " + currentPoints.RuntimeValue;
             yield return new WaitForSeconds(3f);
             elapsedTime.text = "0";
+            points.text = "000";
             currentPoints.RuntimeValue = 0f;
         }
         dialogText.gameObject.SetActive(false);
