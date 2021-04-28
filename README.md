@@ -34,7 +34,7 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 - Se ha creado un spawn de enemigos (el castillo/la Prueba) el cual el jugador debe aguantar lo máximo posible para conseguir la máxima puntuación, siempre pudiendo salir de esa 'habitación' cuando se quiera.
 
-- Se han creado menús de Start Game y de Game Over para volver a empezar desde donde se ha muerto o salir del juego en el que se muestra la puntuación total.
+- Se han creado menús de Start Game, de Pause y de Game Over para volver a empezar desde donde se ha muerto o salir del juego en el que se muestra la puntuación total.
 
 - Se han añadido NPCs con los que interactuar con diálogos. Hay dos tipos: NPCs que se mueven por un camino predeterminado y NPC que simplemente se quedan en su sitio. Se interactúa con ellos automáticamente al pasar cerca.
 
@@ -42,7 +42,7 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 ## TODOs
 
-- Menú de Pausa menos en la Prueba
+- Parar NPCs con Path predefinido cuando el Player entra en su rango
 
 - Sprites personalizados con Piskel para los NPCs
 
