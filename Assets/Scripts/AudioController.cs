@@ -4,23 +4,41 @@ using UnityEngine;
 
 public class AudioController : MonoBehaviour
 {
+    public BoolValue isAudioMuted;
+    private AudioSource sound;
+
+    void Start()
+    {
+        sound = GetComponent<AudioSource>();
+    }
+
     public void PlayAudio()
     {
-        GetComponent<AudioSource>().Play();
+        if (!isAudioMuted.RuntimeValue)
+        {
+            sound.Play();
+        }
     }
 
     public void StopAudio()
     {
-        GetComponent<AudioSource>().Stop();
+        if (!isAudioMuted.RuntimeValue)
+        {
+            sound.Stop();
+        }
     }
 
     public void EnableAudio()
     {
-
-    }
-
-    public void DiableAudio()
-    {
-        
+        if (sound.mute)
+        {
+            sound.mute = false;
+            isAudioMuted.RuntimeValue = false;
+        }
+        else
+        {
+            sound.mute = true;
+            isAudioMuted.RuntimeValue = true;
+        }
     }
 }

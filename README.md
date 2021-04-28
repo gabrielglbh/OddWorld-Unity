@@ -38,9 +38,11 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 - Se han añadido NPCs con los que interactuar con diálogos. Hay dos tipos: NPCs que se mueven por un camino predeterminado y NPC que simplemente se quedan en su sitio. Se interactúa con ellos automáticamente al pasar cerca.
 
-- Se han añadido sonidos: ataque, game over, menú de inicio, canción del mundo y canción de batalla.
+- Se han añadido sonidos: ataque, game over, menú de inicio, canción del mundo y canción de batalla. Se puede silenciar el audio en la pantalla de inicio.
 
 ## TODOs
+
+- Menú de Pausa menos en la Prueba
 
 - Sprites personalizados con Piskel para los NPCs
 
