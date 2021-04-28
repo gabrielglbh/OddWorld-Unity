@@ -13,6 +13,9 @@ TagManager:
   - NPC
   - Menu
   - Heart
+  - Joystick
+  - AttackButton
+  - InteractButton
   layers:
   - Default
   - TransparentFX

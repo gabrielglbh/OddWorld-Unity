@@ -4,7 +4,9 @@ Proyecto Final de MDASDM para la asignatura de Videojuegos @ UPM hecho con Unity
 
 Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengameart.org/content/zelda-like-tilesets-and-sprites). El motivo principal del juego es aguantar lo máximo posible matando enemigos que aparecen constantmente y, si el jugador quiere, observar e interactuar con el pequeño mundo. Se lleva un sistema de puntuación en base a los enemigos matados y el tiempo transcurrido desde que el jugador comience a luchar.
 
-Principales funciones a destacar:
+## Funciones a Destacar
+
+- Se han creado botones táctiles (DPad [Creating a Virtual Joystick por Epitome](https://www.youtube.com/watch?v=2GQe1cvHx9U) y botones normales) para manejar el juego desde dispositivo iOS y Android.
 
 - Se han creado las animaciones mediante Animator para el Player, Enemy y varios objetos. Se han creado las Transitions y Conditions con el Animator (con nodos) y los Blend Trees con sus Motions y Parámetros para los distintos estados del objeto y su determinación de movimiento.
 
@@ -26,12 +28,24 @@ Principales funciones a destacar:
 
 - IA enemigos simple: Te persiguen si estás dentro de su rango. Animaciones añadidas.
 
-- Se han usado ScriptableObjects para definir algunas variables globales (estáticas) de los actores del juego: vida del enemigo, vida del jugador, contador de enemigos y puntuación. La ventaja de estos objetos es que se puede cambiar el valor de estas variables desde un solo sitio y su valor se preserva a lo largo de todo el runtime del juego y se comparte por clases.
+- Se han usado ScriptableObjects para definir algunas variables globales (estáticas) de los actores del juego: vida del enemigo y jugador, contador de enemigos, puntuación, dirección del movimiento del jugador. La ventaja de estos ScriptableObjects es que se puede cambiar el valor de estas variables desde un solo sitio y su valor se preserva a lo largo de todo el runtime del juego y se comparte por clases.
 
-- El jugador tiene 5 vidas. El sistema de vida, daño de enemigos, spawn de enemigos, sistema de puntuación y el game over están hechos con Listeners, UnityEvents y ScriptableObjects. Básicamente, hay objetos que están observando (Listeners) a ciertos eventos personalizados (Event ScriptableObjects) y cuando cierto objeto notifica el evento, los objetos que estaban observándolo, ejecutan un código cualquiera (UnityEvent).
+- El sistema de vida, daño de enemigos, acción de botones en UI, spawn de enemigos, sistema de puntuación y el game over están hechos con Listeners, UnityEvents y ScriptableObjects. Básicamente, hay objetos que están observando (Listeners) a ciertos eventos personalizados (Event ScriptableObjects) y cuando cierto objeto notifica el evento, los objetos que estaban observándolo, ejecutan un código cualquiera (UnityEvent).
 
 - Se ha creado un spawn de enemigos (el castillo/la Prueba) el cual el jugador debe aguantar lo máximo posible para conseguir la máxima puntuación, siempre pudiendo salir de esa 'habitación' cuando se quiera.
 
 - Se ha creado menú de Game Over para volver a empezar desde donde se ha muerto o salir del juego en el que se muestra la puntuación total.
 
 - Se han añadido NPCs con los que interactuar con diálogos. Hay dos tipos: NPCs que se mueven por un camino predeterminado y NPC que simplemente se quedan en su sitio. Se interactúa con ellos automáticamente al pasar cerca.
+
+## TODOs
+
+- Fix Camera, Fix Canvas Heart Containers, Fix Scene Message on TrialEnd en móvil
+
+- Añadir vida al jugador al coger un contendor de corazón
+
+- Añadir un menú de inicio para jugar
+
+- Añadir icono de App
+
+- Añadir sonidos

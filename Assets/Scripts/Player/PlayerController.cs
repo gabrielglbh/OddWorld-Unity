@@ -12,56 +12,59 @@ public enum PlayerState {
 // Clase única para el jugador
 public class PlayerController : MonoBehaviour
 {
+
     public float speed;
     public PlayerState state;
-    private Rigidbody2D player;
-    private Vector3 change;
-    // Controlador para lanzar las animaciones del jugador
-    // dependendiendo de state
-    private Animator animator;
+    public InputDirection input;
+
     public FloatValue currentHealth;
-    public BoolValue gameOver;
     public CustomSignal playerHealthSignal;
+
+    public BoolValue gameOver;
     public CustomSignal gameOverSignal;
-    // Varianles usadas para la puntación
+
     public FloatValue currentPoints;
     public Text points;
+
+    private Vector3 change;
+    private Rigidbody2D player;
+    private Animator animator;
 
     void Start()
     {
         state = PlayerState.walk;
         animator = GetComponent<Animator>();
-        animator.SetFloat("moveX", 1);
-        animator.SetFloat("moveY", 0);
+        animator.SetFloat("moveX", 0);
+        animator.SetFloat("moveY", 1);
         player = GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate()
     {
-        // Reset del movimiento cada frame
         change = Vector3.zero;
-        // Directamente recoje si se pulsa WASD o no
-        change.x = Input.GetAxisRaw("Horizontal");
-        change.y = Input.GetAxisRaw("Vertical");
-        // Solo se ataca si se pulsa la tecla E
-        if (Input.GetButtonDown("attack")) {
-            StartCoroutine(AttackRoutine());
-        }
-        // Si no se pulsa la tecla de atacar... moverse y animar el movimiento
-        else if (state == PlayerState.walk || state == PlayerState.idle) {
+        // Recibe de InputController la dirección a la que mover el jugador
+        change.x = input.RuntimeValue.x;
+        change.y = input.RuntimeValue.y;
+
+        if (state == PlayerState.walk || state == PlayerState.idle) {
             UpdateAnimationStateAndMove();
         }
     }
 
-    // Rutina que crea el ataque - con sus hitboxes y todo
-    // "attacking" ejecuta la animación de atacar
+    // A la espera de ser ejecutado mediante la notificación de isAttackSignal
+    // llamada desde ButtonInputController
+    public void Attack()
+    {
+        StartCoroutine(AttackRoutine());
+    }
+
+    // Rutina que crea el ataque con sus hitboxes
     private IEnumerator AttackRoutine() {
         animator.SetBool("attacking", true);
         state = PlayerState.attack;
         yield return null; // Esperamos un frame
         animator.SetBool("attacking", false);
         yield return new WaitForSeconds(0.3f);
-        // Reset del estado para poder realizar un nuevo ataque
         state = PlayerState.walk;
     }
 
@@ -72,9 +75,8 @@ public class PlayerController : MonoBehaviour
             // Para evitar la aceleración en diagonal
             change.Normalize();
             player.MovePosition(transform.position + change * speed * Time.deltaTime);
-            // Anima los sprites del jugador mediante los parámetros
-            // definidos en el Animator, por lo que si sabe que moveX o moveY
-            // tiene un valor, ejecutará la animación asociada a su valor
+
+            // Anima los sprites del jugador mediante los parámetros definidos en el Animator
             animator.SetFloat("moveX", change.x);
             animator.SetFloat("moveY", change.y);
             animator.SetBool("moving", true);

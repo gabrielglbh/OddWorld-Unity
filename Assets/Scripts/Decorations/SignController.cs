@@ -6,30 +6,28 @@ using UnityEngine.UI;
 // Aplicado a las señales del juego
 public class SignController : MonoBehaviour
 {
-    // Dialog box para controlar su activamiento
     public GameObject dialogBox;
-    // Text Object para definir el texto del dialogo 
-    // con el string dialog
     public Text dialogText;
     public string dialog;
+
     public bool isPlayerInRange;
     public bool isInteractable;
     public int fontSize;
 
-    void Update()
+    // SOLO CREADO PARA LOS OBJETOS INTERACTUABLES: isInteractable = true
+    // A la espera de ser ejecutado mediante la notificación de isInteractSignal
+    // llamada desde ButtonInputController
+    public void ShowDialog()
     {
-        if (isInteractable)
+        if (isInteractable && isPlayerInRange)
         {
-            if (Input.GetButtonDown("interact") && isPlayerInRange)
+            if (dialogBox.activeInHierarchy)
             {
-                if (dialogBox.activeInHierarchy)
-                {
-                    dialogBox.SetActive(false);
-                }
-                else
-                {
-                    SetDialog();
-                }
+                dialogBox.SetActive(false);
+            }
+            else
+            {
+                SetDialog();
             }
         }
     }
