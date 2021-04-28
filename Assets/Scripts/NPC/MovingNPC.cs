@@ -8,8 +8,10 @@ public class MovingNPC : NPCController
     public Transform[] path;
     public Transform currentGoal;
     public float speed;
+    public Transform player;
     // Al tratar con floats se crea un margen de error al verificar las posiciones
     private float roundingDistance = 0.2f;
+    private float activationRadius = 4;
 
     void Start()
     {
@@ -28,8 +30,16 @@ public class MovingNPC : NPCController
         }
         else
         {
-            // Sino, moverse hacia el siguiente goal
-            UpdateGoal();
+            if (Vector3.Distance(player.position, transform.position) <= activationRadius)
+            {
+                currentGoal = transform;
+                GetComponent<NPCController>().AnimateToIdle();
+            }
+            else
+            {
+                GetComponent<NPCController>().AnimateToMove();
+                UpdateGoal();
+            }
         }
     }
 

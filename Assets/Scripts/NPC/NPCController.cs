@@ -35,6 +35,16 @@ public class NPCController : MonoBehaviour
         npc.MovePosition(position);
     }
 
+    public void AnimateToIdle()
+    {
+        animator.SetBool("walking", false);
+    }
+
+    public void AnimateToMove()
+    {
+        animator.SetBool("walking", true);
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))

@@ -42587,7 +42587,8 @@ MonoBehaviour:
   - {fileID: 1077653795}
   - {fileID: 677084203}
   currentGoal: {fileID: 0}
-  speed: 2
+  speed: 3
+  player: {fileID: 1146566684}
 --- !u!1001 &1363668915
 PrefabInstance:
   m_ObjectHideFlags: 0

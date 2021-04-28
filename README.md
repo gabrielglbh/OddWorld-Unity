@@ -36,7 +36,7 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 - Se han creado menús de Start Game, de Pause y de Game Over para volver a empezar desde donde se ha muerto o salir del juego en el que se muestra la puntuación total.
 
-- Se han añadido NPCs con los que interactuar con diálogos. Hay dos tipos: NPCs que se mueven por un camino predeterminado y NPC que simplemente se quedan en su sitio. Se interactúa con ellos automáticamente al pasar cerca.
+- Se han añadido NPCs con los que interactuar con diálogos. Hay dos tipos: NPCs que se mueven por un camino predeterminado y paran cuando te ven; y NPC que simplemente se quedan en su sitio. Se interactúa con ellos automáticamente al pasar cerca.
 
 - Se han añadido Custom Sprites para los NPC que hemos personalizado con la temática de nuestros amigos de la carrera.
 
@@ -44,7 +44,7 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 ## TODOs
 
-- Parar NPCs con Path predefinido cuando el Player entra en su rango
+- Añadir a los demás NPC con sus diálogos y posiciones.
 
 - Añadir escena de la casa por dentro
 
