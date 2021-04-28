@@ -14,6 +14,8 @@ public class SpawnController : MonoBehaviour
     public Transform[] spawnPoints;
     private float spawnDelay = 3f; 
     private float maxEnemies = 12f;
+    public CustomSignal trialEnter;
+    public CustomSignal trialExit;
 
     public Text dialogText;
     public string dialog;
@@ -47,6 +49,7 @@ public class SpawnController : MonoBehaviour
         StartCoroutine(AddEnemy());
         StartCoroutine(CreateTimer());
         isInTrial.RuntimeValue = true;
+        trialEnter.Notify();
     }
 
     public void EndTrial()
@@ -60,6 +63,7 @@ public class SpawnController : MonoBehaviour
             GameObject.Destroy(enemy);
             currentEnemies.RuntimeValue -= 1;
         }
+        trialExit.Notify();
     }
 
     private IEnumerator AddEnemy() 

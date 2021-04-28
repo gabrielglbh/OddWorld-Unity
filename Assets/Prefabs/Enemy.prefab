@@ -48,6 +48,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1350227105
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -5034061168752090764, guid: c534ac90dd6104235ba9bb18439de845, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -175,7 +176,7 @@ MonoBehaviour:
   attack: 1
   speed: 2.5
   animator: {fileID: 0}
-  target: {fileID: 0}
+  target: {fileID: 8891910537950458369, guid: 9a422d10d2392425fa4961b1f457c891, type: 3}
   activationRadius: 15
   attackRadius: 1
 --- !u!61 &9072479619212720928
