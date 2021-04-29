@@ -12,7 +12,6 @@ public class NPCController : MonoBehaviour
     public GameObject dialogBox;
     public Text dialogText;
     public string dialog;
-    public int fontSize;
     public float activationRadius = 4;
     public Transform player;
 
@@ -57,7 +56,6 @@ public class NPCController : MonoBehaviour
         {
             dialogBox.SetActive(true);
             dialogText.text = dialog;
-            dialogText.fontSize = fontSize;
         }
     }
 
