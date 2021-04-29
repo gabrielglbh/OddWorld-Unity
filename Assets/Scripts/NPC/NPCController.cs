@@ -12,7 +12,7 @@ public class NPCController : MonoBehaviour
     public GameObject dialogBox;
     public Text dialogText;
     public string dialog;
-    public float activationRadius = 4;
+    public float activationRadius = 2;
     public Transform player;
 
     public void SetAnimatorForMovingNPC()
