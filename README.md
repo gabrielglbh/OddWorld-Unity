@@ -16,7 +16,7 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 - La cámara está limitada al TileMap en el que el jugador esté de manera explícita en el código.
 
-- Hay 4 TileMaps distintos: uno por cada 'habitación'. La cámara se mueve entre ellas con transiciones al estilo The Legend of Zelda: A Link to the Past.
+- Hay 5 TileMaps distintos: cuatro (uno por cada 'habitación' del Overworld) y una 'habitación' secreta. La cámara se mueve entre ellas con transiciones al estilo The Legend of Zelda: A Link to the Past.
 
 - Se han creado HitBoxes para las 4 animaciones de ataque con Polygon Collider 2D. La hitbox se activa en la animación y puede empujar y dañar a los enemigos.
 
