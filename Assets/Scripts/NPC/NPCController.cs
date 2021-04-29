@@ -13,6 +13,8 @@ public class NPCController : MonoBehaviour
     public Text dialogText;
     public string dialog;
     public int fontSize;
+    public float activationRadius = 4;
+    public Transform player;
 
     public void SetAnimatorForMovingNPC()
     {
@@ -35,9 +37,13 @@ public class NPCController : MonoBehaviour
         npc.MovePosition(position);
     }
 
-    public void AnimateToIdle()
+    // Cuando se para el NPC, se anima el idle state para que
+    // siga al jugador
+    public void AnimateToIdle(Vector2 facingPlayerDirection)
     {
         animator.SetBool("walking", false);
+        animator.SetFloat("moveX", facingPlayerDirection.x);
+        animator.SetFloat("moveY", facingPlayerDirection.y);
     }
 
     public void AnimateToMove()

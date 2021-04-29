@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: a29e1e2febce2435f8de80336896ea33
+guid: 206d17cb047b645b4a6e1d5206def3e6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6259440379094813346
-    second: Guille_0
+      213: -8959928727011848185
+    second: Sergio_Sprite_0
   - first:
-      213: -8355393573855329310
-    second: Guille_1
+      213: 6816833802327760629
+    second: Sergio_Sprite_1
   - first:
-      213: -6252358326444882802
-    second: Guille_2
+      213: -8174027196109821553
+    second: Sergio_Sprite_2
   - first:
-      213: 5544185293559408206
-    second: Guille_3
+      213: 1300667791306556341
+    second: Sergio_Sprite_3
   - first:
-      213: -6379319084917796809
-    second: Guille_4
+      213: -5604323480238116056
+    second: Sergio_Sprite_4
   - first:
-      213: -6468360774183521370
-    second: Guille_5
+      213: -7812881575538758447
+    second: Sergio_Sprite_5
   - first:
-      213: 7454670193835915244
-    second: Guille_6
+      213: -9129280864829806077
+    second: Sergio_Sprite_6
   - first:
-      213: 1153623768005208929
-    second: Guille_7
+      213: 1565951804805872059
+    second: Sergio_Sprite_7
   - first:
-      213: 4617127074050747864
-    second: Guille_8
+      213: -3533471163153932350
+    second: Sergio_Sprite_8
   - first:
-      213: 469437292055407363
-    second: Guille_9
+      213: 5299238193843253896
+    second: Sergio_Sprite_9
   - first:
-      213: -7932319690129326621
-    second: Guille_10
+      213: -8660565178360525992
+    second: Sergio_Sprite_10
   - first:
-      213: -3278407836602749709
-    second: Guille_11
+      213: 1420876786480630009
+    second: Sergio_Sprite_11
   - first:
-      213: 1921979155199675415
-    second: Guille_12
+      213: 7472375094262577064
+    second: Sergio_Sprite_12
   - first:
-      213: 5567802715676605103
-    second: Guille_13
+      213: -2308875266158563715
+    second: Sergio_Sprite_13
   - first:
-      213: 5760436280875069027
-    second: Guille_14
+      213: -6109836364275381220
+    second: Sergio_Sprite_14
   - first:
-      213: 4269965251730260188
-    second: Guille_15
+      213: 4439518607572359549
+    second: Sergio_Sprite_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -163,7 +163,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guille_0
+      name: Sergio_Sprite_0
       rect:
         serializedVersion: 2
         x: 0
@@ -177,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2aacea06cdffdd650800000000000000
-      internalID: 6259440379094813346
+      spriteID: 70014a56b40f7a380800000000000000
+      internalID: -8959928727011848185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_1
+      name: Sergio_Sprite_1
       rect:
         serializedVersion: 2
         x: 16
@@ -198,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e385c730ddab0c80800000000000000
-      internalID: -8355393573855329310
+      spriteID: 5fe1f90e9324a9e50800000000000000
+      internalID: 6816833802327760629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_2
+      name: Sergio_Sprite_2
       rect:
         serializedVersion: 2
         x: 32
@@ -219,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e840ccf7a392b39a0800000000000000
-      internalID: -6252358326444882802
+      spriteID: f89ed7fa295009e80800000000000000
+      internalID: -8174027196109821553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_3
+      name: Sergio_Sprite_3
       rect:
         serializedVersion: 2
         x: 48
@@ -240,14 +240,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e46ad8f6627e0fc40800000000000000
-      internalID: 5544185293559408206
+      spriteID: 5b38e970776ec0210800000000000000
+      internalID: 1300667791306556341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_4
+      name: Sergio_Sprite_4
       rect:
         serializedVersion: 2
         x: 0
@@ -261,14 +261,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 730da92671b1877a0800000000000000
-      internalID: -6379319084917796809
+      spriteID: 823b60adc717932b0800000000000000
+      internalID: -5604323480238116056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_5
+      name: Sergio_Sprite_5
       rect:
         serializedVersion: 2
         x: 16
@@ -282,14 +282,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a378bf8524cb36a0800000000000000
-      internalID: -6468360774183521370
+      spriteID: 1dc61d9f991139390800000000000000
+      internalID: -7812881575538758447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_6
+      name: Sergio_Sprite_6
       rect:
         serializedVersion: 2
         x: 32
@@ -303,14 +303,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce738457b0f447760800000000000000
-      internalID: 7454670193835915244
+      spriteID: 30a6c052c674e4180800000000000000
+      internalID: -9129280864829806077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_7
+      name: Sergio_Sprite_7
       rect:
         serializedVersion: 2
         x: 48
@@ -324,14 +324,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16be56074be720010800000000000000
-      internalID: 1153623768005208929
+      spriteID: bb9f5d4aed06bb510800000000000000
+      internalID: 1565951804805872059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_8
+      name: Sergio_Sprite_8
       rect:
         serializedVersion: 2
         x: 0
@@ -345,14 +345,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dd22ab7c94531040800000000000000
-      internalID: 4617127074050747864
+      spriteID: 2cf9f10c2b696fec0800000000000000
+      internalID: -3533471163153932350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_9
+      name: Sergio_Sprite_9
       rect:
         serializedVersion: 2
         x: 16
@@ -366,14 +366,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30ba84ddab6c38600800000000000000
-      internalID: 469437292055407363
+      spriteID: 882b53c8f0daa8940800000000000000
+      internalID: 5299238193843253896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_10
+      name: Sergio_Sprite_10
       rect:
         serializedVersion: 2
         x: 32
@@ -387,14 +387,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ed3101e44dbae190800000000000000
-      internalID: -7932319690129326621
+      spriteID: 85b04bd1bdd7fc780800000000000000
+      internalID: -8660565178360525992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_11
+      name: Sergio_Sprite_11
       rect:
         serializedVersion: 2
         x: 48
@@ -408,14 +408,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fcaf6e3171c082d0800000000000000
-      internalID: -3278407836602749709
+      spriteID: 9f8c6cfb8e7f7b310800000000000000
+      internalID: 1420876786480630009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_12
+      name: Sergio_Sprite_12
       rect:
         serializedVersion: 2
         x: 0
@@ -429,14 +429,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71cc16bcbdd3caa10800000000000000
-      internalID: 1921979155199675415
+      spriteID: 8a73ff1de8533b760800000000000000
+      internalID: 7472375094262577064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_13
+      name: Sergio_Sprite_13
       rect:
         serializedVersion: 2
         x: 16
@@ -450,14 +450,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: faafb57021fc44d40800000000000000
-      internalID: 5567802715676605103
+      spriteID: d7eeee9ad2a35ffd0800000000000000
+      internalID: -2308875266158563715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_14
+      name: Sergio_Sprite_14
       rect:
         serializedVersion: 2
         x: 32
@@ -471,14 +471,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36ea4d0074e21ff40800000000000000
-      internalID: 5760436280875069027
+      spriteID: c1c0a9fa230853ba0800000000000000
+      internalID: -6109836364275381220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guille_15
+      name: Sergio_Sprite_15
       rect:
         serializedVersion: 2
         x: 48
@@ -492,8 +492,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd0c4a0f5c6f14b30800000000000000
-      internalID: 4269965251730260188
+      spriteID: d79561ae6a65c9d30800000000000000
+      internalID: 4439518607572359549
       vertices: []
       indices: 
       edges: []
