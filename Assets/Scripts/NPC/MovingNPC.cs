@@ -15,7 +15,7 @@ public class MovingNPC : NPCController
 
     void Start()
     {
-        GetComponent<NPCController>().SetAnimatorForMovingNPC();
+        SetAnimatorForMovingNPC();
     }
 
     void Update()
@@ -26,18 +26,18 @@ public class MovingNPC : NPCController
             Vector3 temp = Vector3.MoveTowards(transform.position, path[currentPoint].position, speed * Time.deltaTime);
             Vector2 direction = temp - transform.position;
             direction = direction.normalized;
-            GetComponent<NPCController>().AnimatedMove(direction, temp);
+            AnimatedMove(direction, temp);
         }
         else
         {
             if (Vector3.Distance(player.position, transform.position) <= activationRadius)
             {
                 currentGoal = transform;
-                GetComponent<NPCController>().AnimateToIdle();
+                AnimateToIdle();
             }
             else
             {
-                GetComponent<NPCController>().AnimateToMove();
+                AnimateToMove();
                 UpdateGoal();
             }
         }

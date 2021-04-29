@@ -9,12 +9,12 @@ public class StartMenuController : MenuController
 
     void Start()
     {
-        GetComponent<MenuController>().CreateMenu();
+        CreateMenu();
     }
 
     public void StartPlay()
     {
-        GetComponent<MenuController>().StartAgain();
+        StartAgain();
         enterGame.Notify();
     }
 }

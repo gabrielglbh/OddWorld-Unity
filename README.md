@@ -22,7 +22,7 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 - Los enemigos y el jugador tienen Hurtbox con Collision Box 2D, de tal manera que el jugador pueda dañar al enemigo y el enemigo al jugador.
 
-- Se han creado cuadros de dialogo con distintos elementos del juego (señales, estatuas, cadáveres, NPCs) con los que interactuar en el mundo.
+- Se han creado cuadros de dialogo con distintos elementos del juego (señales, estatuas, NPCs) con los que interactuar en el mundo.
 
 - Los jarrones y las briznas de hierba se pueden romper. Tienen 1 posibilidad entre 3 de albergar un corazón para que el jugador recupere la vida. Siempre se recupera vida con un corazón completo.
 

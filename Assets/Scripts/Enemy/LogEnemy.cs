@@ -38,7 +38,7 @@ public class LogEnemy : EnemyController
             if (state == EnemyState.idle || state == EnemyState.walk && state != EnemyState.staggered) 
             {
                 // Dirección y movimiento en base al target y al speed del enemigo
-                Vector3 movement = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+                Vector3 movement = Vector3.MoveTowards(transform.position, target.position, Random.Range(3, 7) * Time.deltaTime);
                 // Se cambia el estado a walk
                 ChangeState(EnemyState.walk);
                 // Se anima en función de la dirección que haya tomado el enemigo

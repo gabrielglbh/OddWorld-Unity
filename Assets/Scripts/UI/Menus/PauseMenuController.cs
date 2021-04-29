@@ -9,11 +9,11 @@ public class PauseMenuController : MenuController
 
     public void CreatePauseMenu()
     {
-        GetComponent<MenuController>().CreateMenu();
+        CreateMenu();
     }
 
     public void ContinuePlaying()
     {
-        GetComponent<MenuController>().StartAgain();
+        StartAgain();
     }
 }

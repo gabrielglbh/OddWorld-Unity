@@ -16,7 +16,7 @@ public class GameOverMenuController : MenuController
 
     public void Create()
     {
-        this.GetComponent<MenuController>().CreateMenu();
+        CreateMenu();
         data.text = "Tiempo en la Prueba: " + elapsedTime.text + " segundos " +
                     "\nPuntos Totales: " + points.text;
     }
@@ -29,5 +29,6 @@ public class GameOverMenuController : MenuController
         currentPoints.RuntimeValue = 0;
         points.text = "000";
         health.Notify();
+        StartAgain();
     }
 }

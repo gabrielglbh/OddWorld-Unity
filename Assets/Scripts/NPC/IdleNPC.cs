@@ -7,6 +7,6 @@ public class IdleNPC : NPCController
 
     void Start()
     {
-        GetComponent<NPCController>().SetAnimatorForIdleNPC(facingDirection);
+        SetAnimatorForIdleNPC(facingDirection);
     }
 }

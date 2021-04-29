@@ -22,7 +22,6 @@ public class EnemyController : MonoBehaviour
     public float health;
     public string id;
     public int attack;
-    public float speed;
 
     void Awake() {
         health = maxHealth.initialValue;
@@ -36,6 +35,7 @@ public class EnemyController : MonoBehaviour
         health -= damage;
         if (health <= 0) 
         {
+            currentEnemies.RuntimeValue -= 1;
             Destroy(this.gameObject);
             enemyDefeteadSignal.Notify();
         }
@@ -62,11 +62,4 @@ public class EnemyController : MonoBehaviour
             state = EnemyState.idle;
         }
     }
-
-    // Llamado al notificarse EnemyDefeatedSignal desde EnemyController al morir un enemigo,
-    // desbloqueando el spawn para más enemigos
-    public void UpdateEnemyCount() 
-    {
-        currentEnemies.RuntimeValue -= 1;
-    } 
 }
