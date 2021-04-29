@@ -14,7 +14,7 @@ public class MenuController : MonoBehaviour
         controls.SetActive(false);
     }
 
-    public void StartAgain()
+    public void RemoveMenu()
     {
         menu.SetActive(false);
         controls.SetActive(true);

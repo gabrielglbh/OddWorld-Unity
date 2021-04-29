@@ -12,9 +12,9 @@ public class StartMenuController : MenuController
         CreateMenu();
     }
 
-    public void StartPlay()
+    public void RemoveStartMenu()
     {
-        StartAgain();
+        RemoveMenu();
         enterGame.Notify();
     }
 }

@@ -192,13 +192,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca6b54ec99f9b4da5bea2829b22e2a21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 0}
+  dialogBox: {fileID: 7394373616016776807, guid: f0fb27c7edee04c7bb1635e6cc1bba4d, type: 3}
   dialogText: {fileID: 0}
   dialog: Es increible que Olmedo siendo un Dios, haya hecho tan poco y nos haya
     dado tanto. Le estoy muy agradecido.
   activationRadius: 4
   player: {fileID: 0}
-  isPlayerTalkingToNPC: {fileID: 11400000, guid: 282efa376780a4f499e7a5ec9b753b52, type: 2}
-  isPlayerDoneTalkingToNPC: {fileID: 11400000, guid: b4a107d36e67f42c8b928687ad94daa0, type: 2}
   facingDirection: {x: 0, y: -1, z: 0}
   npcRoutine: 1

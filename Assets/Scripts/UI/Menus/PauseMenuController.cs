@@ -12,8 +12,8 @@ public class PauseMenuController : MenuController
         CreateMenu();
     }
 
-    public void ContinuePlaying()
+    public void RemovePauseMenu()
     {
-        StartAgain();
+        RemoveMenu();
     }
 }

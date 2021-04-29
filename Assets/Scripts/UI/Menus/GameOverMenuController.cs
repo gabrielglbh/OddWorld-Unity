@@ -14,14 +14,14 @@ public class GameOverMenuController : MenuController
     public FloatValue playerHealth;
     public CustomSignal health;
 
-    public void Create()
+    public void CreateGameOverMenu()
     {
         CreateMenu();
         data.text = "Tiempo Total: " + elapsedTime.text + " segundos " +
                     "\nPuntos Totales: " + points.text;
     }
 
-    public void Restart()
+    public void RemoveGameOverMenu()
     {
         player.SetActive(true);
         containers.RuntimeValue = 5;
@@ -29,6 +29,6 @@ public class GameOverMenuController : MenuController
         currentPoints.RuntimeValue = 0;
         points.text = "000";
         health.Notify();
-        StartAgain();
+        RemoveMenu();
     }
 }
