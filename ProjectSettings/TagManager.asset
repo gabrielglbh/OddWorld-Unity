@@ -16,6 +16,8 @@ TagManager:
   - Joystick
   - AttackButton
   - InteractButton
+  - EnterSecret
+  - ExitSecret
   layers:
   - Default
   - TransparentFX

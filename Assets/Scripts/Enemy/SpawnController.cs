@@ -12,7 +12,7 @@ public class SpawnController : MonoBehaviour
     public Text elapsedTime;
     public Text points;
     public Transform[] spawnPoints;
-    private float spawnDelay = 3f; 
+    private float spawnDelay = 2.25f; 
     private float maxEnemies = 12f;
     public CustomSignal trialEnter;
     public CustomSignal trialExit;

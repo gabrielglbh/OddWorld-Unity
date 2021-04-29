@@ -989,6 +989,7 @@ SpriteAtlas:
   - {fileID: 8317763709045614655, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: -7693146860823203287, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: -9150883278488253075, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
+  - {fileID: -9011683056190439863, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: -1500545212691171932, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: 2572722799497503140, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
   - {fileID: -8562630478679771310, guid: 4a786ee572d824f1eafd74012affb33d, type: 3}
@@ -2651,6 +2652,7 @@ SpriteAtlas:
   - Overworld_199
   - Overworld_897
   - Overworld_807
+  - Overworld_1084
   - Overworld_1044
   - Overworld_1036
   - Overworld_160

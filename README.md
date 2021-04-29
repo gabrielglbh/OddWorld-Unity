@@ -40,14 +40,16 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 - Se han añadido Custom Sprites para los NPC que hemos personalizado con la temática de nuestros amigos de la carrera.
 
-- Se han añadido sonidos: ataque, game over, menú de inicio, canción del mundo y canción de batalla. Se puede silenciar el audio en la pantalla de inicio.
+- Se han añadido sonidos: ataque, game over, menú de inicio, canción del mundo y canción de batalla (las canciones sin copyright se han descargado de [FesliyanStudios](https://www.fesliyanstudios.com/es/royalty-free-music/downloads-c/8-bit-music/6)). Se puede silenciar el audio en la pantalla de pausa.
 
 - Se ha añadido una fuente para texto customizada de 8 bits extraída de [FontSpace](https://www.fontspace.com/press-start-2p-font-f11591).
 
 ## TODOs
 
+- Fix: Botón de pausa no aparece al hacer Game Over.
+
+- Fix: Hacer que los jarrones de la Prueba se regeneren al entrar de nuevo.
+
 - Añadir a los demás NPC con sus diálogos y posiciones.
 
-- Añadir escena de la casa por dentro
-
-- Añadir icono de App
+- Añadir icono de App.

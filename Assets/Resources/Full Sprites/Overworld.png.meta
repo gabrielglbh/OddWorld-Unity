@@ -3254,6 +3254,9 @@ TextureImporter:
   - first:
       213: 2821945214121612769
     second: Overworld_1083
+  - first:
+      213: -9011683056190439863
+    second: Overworld_1084
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -26064,7 +26067,7 @@ TextureImporter:
         width: 48
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -26085,7 +26088,7 @@ TextureImporter:
         width: 48
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -26106,7 +26109,7 @@ TextureImporter:
         width: 48
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -26114,6 +26117,27 @@ TextureImporter:
       bones: []
       spriteID: 1e5155f8830992720800000000000000
       internalID: 2821945214121612769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overworld_1084
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 48
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ebc5f910210f280800000000000000
+      internalID: -9011683056190439863
       vertices: []
       indices: 
       edges: []
