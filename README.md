@@ -42,6 +42,8 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 - Se han añadido sonidos: ataque, game over, menú de inicio, canción del mundo y canción de batalla. Se puede silenciar el audio en la pantalla de inicio.
 
+- Se ha añadido una fuente para texto customizada de 8 bits extraída de [FontSpace](https://www.fontspace.com/press-start-2p-font-f11591).
+
 ## TODOs
 
 - Añadir a los demás NPC con sus diálogos y posiciones.

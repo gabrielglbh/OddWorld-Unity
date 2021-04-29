@@ -12,7 +12,6 @@ public class SignController : MonoBehaviour
 
     public bool isPlayerInRange;
     public bool isInteractable;
-    public int fontSize;
 
     // SOLO CREADO PARA LOS OBJETOS INTERACTUABLES: isInteractable = true
     // A la espera de ser ejecutado mediante la notificación de isInteractSignal
@@ -36,7 +35,6 @@ public class SignController : MonoBehaviour
     {
         dialogBox.SetActive(true);
         dialogText.text = dialog;
-        dialogText.fontSize = fontSize;
     }
 
     private void OnTriggerEnter2D(Collider2D other) 

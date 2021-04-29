@@ -15135,10 +15135,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 20
     m_Alignment: 4
@@ -16196,7 +16196,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -139.76, y: 20.39}
+  m_AnchoredPosition: {x: -176, y: 20.39}
   m_SizeDelta: {x: 80.477, y: 78.7793}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &127023191
@@ -16341,7 +16341,6 @@ MonoBehaviour:
   dialog: "Torre de vig\xEDa del Castillo"
   isPlayerInRange: 0
   isInteractable: 1
-  fontSize: 25
 --- !u!212 &135738967
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17366,7 +17365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2893242833019410333, guid: 9c9e8be82a45b4a3bafc02458a947427, type: 3}
       propertyPath: speed
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2893242833019410333, guid: 9c9e8be82a45b4a3bafc02458a947427, type: 3}
       propertyPath: dialog
@@ -17379,7 +17378,7 @@ PrefabInstance:
       objectReference: {fileID: 1146566684}
     - target: {fileID: 2893242833019410333, guid: 9c9e8be82a45b4a3bafc02458a947427, type: 3}
       propertyPath: fontSize
-      value: 25
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2893242833019410333, guid: 9c9e8be82a45b4a3bafc02458a947427, type: 3}
       propertyPath: dialogBox
@@ -17566,7 +17565,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 1
@@ -18084,10 +18083,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 20
     m_Alignment: 4
@@ -23983,10 +23982,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 20
     m_Alignment: 4
@@ -25015,7 +25014,6 @@ MonoBehaviour:
     prueba... Y entonces mor\xED. \xA1Buena suerte!"
   isPlayerInRange: 0
   isInteractable: 1
-  fontSize: 25
 --- !u!114 &763923597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25209,11 +25207,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
+    m_FontSize: 8
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 8
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -25761,11 +25759,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -26644,12 +26642,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
+    m_FontSize: 15
     m_FontStyle: 1
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 115
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -27028,7 +27026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2893242833019410333, guid: 9c9e8be82a45b4a3bafc02458a947427, type: 3}
       propertyPath: speed
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2893242833019410333, guid: 9c9e8be82a45b4a3bafc02458a947427, type: 3}
       propertyPath: dialog
@@ -27041,7 +27039,7 @@ PrefabInstance:
       objectReference: {fileID: 1146566684}
     - target: {fileID: 2893242833019410333, guid: 9c9e8be82a45b4a3bafc02458a947427, type: 3}
       propertyPath: fontSize
-      value: 25
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2893242833019410333, guid: 9c9e8be82a45b4a3bafc02458a947427, type: 3}
       propertyPath: dialogBox
@@ -34084,7 +34082,6 @@ MonoBehaviour:
     como cabr\xEDa esperar..."
   isPlayerInRange: 0
   isInteractable: 1
-  fontSize: 25
 --- !u!61 &1099693782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34772,7 +34769,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 1
@@ -35941,10 +35938,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 20
     m_Alignment: 4
@@ -57044,11 +57041,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1713252403}
   dialogText: {fileID: 919753904}
-  dialog: "\xA1Bienvenido a OddWorld! Mu\xE9vete con el DPad; pulsa A para interactuar
-    con los objetos; pulsa B para atacar."
+  dialog: "\xA1Bienvenido a OddWorld! Podr\xE1s explorar el mundo para descubrir
+    a sus pintorescos personajes o luchar hasta la muerte en la Prueba. \xA1Disfruta! "
   isPlayerInRange: 0
   isInteractable: 1
-  fontSize: 25
 --- !u!114 &1306588192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57269,11 +57265,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
+    m_FontSize: 8
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -57728,7 +57724,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 1
@@ -57974,8 +57970,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 410.36746, y: 0.000002861}
-  m_SizeDelta: {x: 109.7429, y: 52.0703}
+  m_AnchoredPosition: {x: 411.00003, y: 0.000002861}
+  m_SizeDelta: {x: 225.022, y: 52.0703}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1409396286
 MonoBehaviour:
@@ -57998,8 +57994,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 12
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -67009,7 +67005,6 @@ MonoBehaviour:
     como cabr\xEDa esperar..."
   isPlayerInRange: 0
   isInteractable: 1
-  fontSize: 25
 --- !u!61 &1662748460
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67649,7 +67644,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
     m_FontSize: 15
     m_FontStyle: 1
     m_BestFit: 1
@@ -67950,7 +67945,6 @@ MonoBehaviour:
     Olmedo. \xC9l trajo riqueza y alegr\xEDa a la gente de OddWorld."
   isPlayerInRange: 0
   isInteractable: 0
-  fontSize: 25
 --- !u!1 &1826472444
 GameObject:
   m_ObjectHideFlags: 0
@@ -68204,11 +68198,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 5
+    m_BestFit: 0
+    m_MinSize: 2
     m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -68218,10 +68212,12 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Trial has ended better luck next time
 
-    total porints =asdfasdf aseconds
 
-    sdfasdf
-    = asdfsf'
+    Total Time =12 aseconds
+
+
+    Total
+    Points = 002'
 --- !u!222 &1852599643
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -68262,7 +68258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 1, g: 1, b: 1, a: 1}
-  m_EffectDistance: {x: 2, y: -2}
+  m_EffectDistance: {x: 1, y: 1}
   m_UseGraphicAlpha: 1
 --- !u!1 &1858611326
 GameObject:
@@ -68642,10 +68638,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 20
     m_Alignment: 4
@@ -69194,11 +69190,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 1
     m_MaxSize: 20
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -69696,11 +69692,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
+    m_FontSize: 9
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -69708,7 +69704,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pause
+  m_Text: Pausa
 --- !u!222 &1974540728
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -69835,6 +69831,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1146566684}
+    - target: {fileID: 1750946525919545103, guid: 32fe73537a93e4a498f54e72df727408, type: 3}
+      propertyPath: fontSize
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1750946525919545103, guid: 32fe73537a93e4a498f54e72df727408, type: 3}
       propertyPath: dialogBox
       value: 
@@ -70747,8 +70747,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 117, y: -5}
-  m_SizeDelta: {x: 335.3906, y: 60}
+  m_AnchoredPosition: {x: 104, y: -0.0000081062}
+  m_SizeDelta: {x: 402.131, y: 44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2046306009
 MonoBehaviour:
@@ -70771,13 +70771,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -70785,7 +70785,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Total Points: X
 
-    Total Time in Trial: X'
+    Total Time: X seconds'
 --- !u!222 &2046306010
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -70890,8 +70890,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 411, y: -36.301}
-  m_SizeDelta: {x: 142.631, y: 29.3014}
+  m_AnchoredPosition: {x: 411, y: -33}
+  m_SizeDelta: {x: 209.3714, y: 29.3014}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2051409968
 MonoBehaviour:
@@ -70914,8 +70914,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 12
+    m_Font: {fileID: 12800000, guid: 5f82468ef0f264566b36547d281c89aa, type: 3}
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1

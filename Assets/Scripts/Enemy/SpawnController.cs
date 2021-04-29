@@ -110,8 +110,8 @@ public class SpawnController : MonoBehaviour
         else if (this.gameObject.CompareTag("TrialExit"))
         {
             dialogText.text = dialog +
-                "\nTiempo en la Prueba: " + elapsedTime.text + " segundos " +
-                "\nPuntos Totales: " + currentPoints.RuntimeValue;
+                "\n\nTiempo Total: " + elapsedTime.text + " segundos " +
+                "\n\nPuntos Totales: " + currentPoints.RuntimeValue;
             yield return new WaitForSeconds(3f);
             elapsedTime.text = "0";
             points.text = "000";
