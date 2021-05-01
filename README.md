@@ -46,10 +46,6 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 ## TODOs
 
-- Fix: Botón de pausa no aparece al hacer Game Over.
-
-- Fix: Hacer que los jarrones de la Prueba se regeneren al entrar de nuevo.
-
 - Añadir a los demás NPC con sus diálogos y posiciones.
 
 - Añadir icono de App.
