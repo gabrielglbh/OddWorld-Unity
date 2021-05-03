@@ -8,6 +8,10 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 ## A Destacar: Desarrollo
 
+### Lanzamiento a Google Play y App Store
+
+- Se ha lanzado el juego a Google Play y a la App Store. Para Google Play se ha creado una nueva keystore para firmar la aplicación mediante el gestor de Unity. Para App Store se han usado los certificados del desarrollador previamente creados.
+
 ### UI y Sonidos
 
 - Se han creado botones táctiles (DPad [Creating a Virtual Joystick por Epitome](https://www.youtube.com/watch?v=2GQe1cvHx9U) y botones normales) para manejar el juego desde dispositivo iOS y Android.
