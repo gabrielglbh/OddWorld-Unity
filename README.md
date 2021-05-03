@@ -1,51 +1,85 @@
+<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/Resources/Icon/icon.png" alt="Icon" width="300" height="300">
+
 # OddWorld
 
 Proyecto Final de MDASDM para la asignatura de Videojuegos @ UPM hecho con Unity.
 
 Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengameart.org/content/zelda-like-tilesets-and-sprites). El motivo principal del juego es aguantar lo máximo posible matando enemigos que aparecen constantmente y, si el jugador quiere, observar e interactuar con el pequeño mundo. Se lleva un sistema de puntuación en base a los enemigos matados y el tiempo transcurrido desde que el jugador comience a luchar.
 
-## Funciones a Destacar
+## A Destacar: Desarrollo
+
+### UI y Sonidos
 
 - Se han creado botones táctiles (DPad [Creating a Virtual Joystick por Epitome](https://www.youtube.com/watch?v=2GQe1cvHx9U) y botones normales) para manejar el juego desde dispositivo iOS y Android.
 
-- Se han creado las animaciones mediante Animator para el Player, Enemy y varios objetos. Se han creado las Transitions y Conditions con el Animator (con nodos) y los Blend Trees con sus Motions y Parámetros para los distintos estados del objeto y su determinación de movimiento.
+- Se ha añadido una fuente para texto customizada de 8 bits extraída de [FontSpace](https://www.fontspace.com/press-start-2p-font-f11591) para mostrar en todo el juego: diálogos, menús e información.
 
-- Se ha creado un Sprite Atlas para eliminar los errores de Unity al tratar los sprites como objetos 3D.
+- Se han creado menús de Start Game y de Game Over para volver a empezar desde donde se ha muerto o salir del juego en el que se muestra la puntuación total.
 
-- Se ha creado un TileMap para crear el mapa: un mapa de colisiones (TileMap Collider 2D con Composite Collider) y un mapa de suelo por donde el jugador puede moverse.
+<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/PreviewImages/menu.png" alt="Menu" width="436" height="152">
 
-- La cámara está limitada al TileMap en el que el jugador esté de manera explícita en el código.
+- Se han añadido sonidos: ataque, menú de inicio, canción del mundo, canción de batalla y canción secreta (las canciones sin copyright se han descargado de [FesliyanStudios](https://www.fesliyanstudios.com/es/royalty-free-music/downloads-c/8-bit-music/6)). Se puede silenciar el audio en cualquier momento.
 
-- Hay 5 TileMaps distintos: cuatro (uno por cada 'habitación' del Overworld) y una 'habitación' secreta. La cámara se mueve entre ellas con transiciones al estilo The Legend of Zelda: A Link to the Past.
+- Se han añadido el icono de la app para Android e iOS. El icono ha sido extraído de un asset del juego.
 
-- Se han creado HitBoxes para las 4 animaciones de ataque con Polygon Collider 2D. La hitbox se activa en la animación y puede empujar y dañar a los enemigos.
+### Animaciones
 
-- Los enemigos y el jugador tienen Hurtbox con Collision Box 2D, de tal manera que el jugador pueda dañar al enemigo y el enemigo al jugador.
+- Se han creado las animaciones mediante Animator para el jugador, los enemigos y varios objetos del mundo. Se han creado las Transitions y Conditions con el Animator (con nodos) y los Blend Trees con sus Motions y Parámetros para los distintos estados del objeto y su determinación de movimiento mediante script.
+
+### Mundo con TileMaps
+
+- Se ha creado un Sprite Atlas para eliminar los errores de Unity al tratar los sprites como objetos 3D (esto elimina una delgada línea negra entre sprites cuando se corre el juego).
+
+- Se han creado varios TileMaps para crear el mapa. Cada uno de ellos consta de un mapa de colisiones (TileMap Collider 2D con Composite Collider), un mapa de suelo por donde el jugador puede moverse y un mapa de decoraciones.
+
+### Hitboxes
+
+- Se han creado HitBoxes para las 4 animaciones de ataque con Polygon Collider 2D. La hitbox se activa en la animación. Empuja y daña a los enemigos.
+
+- Los enemigos y el jugador tienen Hurtbox (Collision Box 2D), de tal manera que el enemigo pueda dañar al jugador, evento que se observa mediante OnTriggerEnter2D.
+
+### Diálogos
 
 - Se han creado cuadros de dialogo con distintos elementos del juego (señales, estatuas, NPCs) con los que interactuar en el mundo.
 
-- Los jarrones y las briznas de hierba se pueden romper. Tienen 1 posibilidad entre 3 de albergar un corazón para que el jugador recupere la vida. Siempre se recupera vida con un corazón completo.
+### IA
 
-- IA enemigos simple: Te persiguen si estás dentro de su rango. Animaciones añadidas.
+- IA enemigos simple: Te persiguen si estás dentro de su rango.
+
+### Eventos y Observadores con ScriptableObjects
 
 - Se han usado ScriptableObjects para definir algunas variables globales (estáticas) de los actores del juego: vida del enemigo y jugador, contador de enemigos, puntuación, dirección del movimiento del jugador. La ventaja de estos ScriptableObjects es que se puede cambiar el valor de estas variables desde un solo sitio y su valor se preserva a lo largo de todo el runtime del juego y se comparte por clases.
 
 - El sistema de vida, daño de enemigos, acción de botones en UI, spawn de enemigos, sistema de puntuación y el game over están hechos con Listeners, UnityEvents y ScriptableObjects. Básicamente, hay objetos que están observando (Listeners) a ciertos eventos personalizados (Event ScriptableObjects) y cuando cierto objeto notifica el evento, los objetos que estaban observándolo, ejecutan un código cualquiera (UnityEvent).
 
-- Se ha creado un spawn de enemigos (el castillo/la Prueba) el cual el jugador debe aguantar lo máximo posible para conseguir la máxima puntuación, siempre pudiendo salir de esa 'habitación' cuando se quiera.
+## A Destacar: Vistas y Jugabilidad
 
-- Se han creado menús de Start Game, de Pause y de Game Over para volver a empezar desde donde se ha muerto o salir del juego en el que se muestra la puntuación total.
+### Mapa
+
+- Hay 5 TileMaps distintos: cuatro (uno por cada 'habitación' del Overworld) y una 'habitación' secreta. La cámara se mueve entre ellas con transiciones al estilo The Legend of Zelda: A Link to the Past y está limitada al TileMap en el que el jugador esté de manera explícita en el código.
+
+<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/PreviewImages/map.png" alt="Mapa" width="436" height="152">
+
+### Objetos Rompibles
+
+- Los jarrones y las briznas de hierba se pueden romper. Tienen 1 posibilidad entre 3 de albergar un corazón para que el jugador recupere la vida. Siempre se recupera vida con un corazón completo.
+
+<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/PreviewImages/pot.png" alt="Pot" width="300" height="152">
+
+<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/PreviewImages/potWithHeart.png" alt="Pot with Heart" width="300" height="152">
+
+### La Prueba
+
+- Se ha creado un spawn de enemigos en el cual el jugador debe aguantar lo máximo posible para conseguir la máxima puntuación, siempre pudiendo salir de esa 'habitación' cuando se quiera. Los enemigos hacen spawn aleatoriamente en una de las cuatro esquinas de esta 'habitación' hasta que haya un máximo de 12 en la estancia. El proceso de spawn se realiza infinitamente mientras el número de enemigos sea menor que 12 hasta que el jugador muere en la prueba o simplemente se vaya.
+
+<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/PreviewImages/trial.png" alt="Trial" width="436" height="152">
+
+### Non-Playable Characters (NPCs)
 
 - Se han añadido NPCs con los que interactuar con diálogos. Hay dos tipos: NPCs que se mueven por un camino predeterminado y paran cuando te ven; y NPC que simplemente se quedan en su sitio. Se interactúa con ellos automáticamente al pasar cerca. Todos los NPC al hablar con ellos te miran y cuando te vas, vuelven a su estado normal.
 
+<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/PreviewImages/dialog.png" alt="Dialog" width="436" height="152">
+
 - Se han añadido Custom Sprites para los NPC que hemos personalizado con la temática de nuestros amigos de la carrera.
 
-- Se han añadido sonidos: ataque, game over, menú de inicio, canción del mundo y canción de batalla (las canciones sin copyright se han descargado de [FesliyanStudios](https://www.fesliyanstudios.com/es/royalty-free-music/downloads-c/8-bit-music/6)). Se puede silenciar el audio en la pantalla de pausa.
-
-- Se ha añadido una fuente para texto customizada de 8 bits extraída de [FontSpace](https://www.fontspace.com/press-start-2p-font-f11591).
-
-## TODOs
-
-- Añadir a los demás NPC con sus diálogos y posiciones.
-
-- Añadir icono de App.
+<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/PreviewImages/world.png" alt="World" width="436" height="152">
