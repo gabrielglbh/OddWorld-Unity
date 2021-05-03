@@ -1,4 +1,4 @@
-<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/Resources/Icon/icon.png" alt="Icon" width="300" height="300">
+![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/Resources/Icon/iOS/120.png?raw=true)
 
 # OddWorld
 
@@ -16,7 +16,7 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 - Se han creado menús de Start Game y de Game Over para volver a empezar desde donde se ha muerto o salir del juego en el que se muestra la puntuación total.
 
-<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/PreviewImages/menu.png" alt="Menu" width="436" height="152">
+![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/menu.png?raw=true)
 
 - Se han añadido sonidos: ataque, menú de inicio, canción del mundo, canción de batalla y canción secreta (las canciones sin copyright se han descargado de [FesliyanStudios](https://www.fesliyanstudios.com/es/royalty-free-music/downloads-c/8-bit-music/6)). Se puede silenciar el audio en cualquier momento.
 
@@ -58,28 +58,27 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 - Hay 5 TileMaps distintos: cuatro (uno por cada 'habitación' del Overworld) y una 'habitación' secreta. La cámara se mueve entre ellas con transiciones al estilo The Legend of Zelda: A Link to the Past y está limitada al TileMap en el que el jugador esté de manera explícita en el código.
 
-<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/PreviewImages/map.png" alt="Mapa" width="436" height="152">
+![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/map.png?raw=true)
 
 ### Objetos Rompibles
 
 - Los jarrones y las briznas de hierba se pueden romper. Tienen 1 posibilidad entre 3 de albergar un corazón para que el jugador recupere la vida. Siempre se recupera vida con un corazón completo.
 
-<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/PreviewImages/pot.png" alt="Pot" width="300" height="152">
-
-<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/PreviewImages/potWithHeart.png" alt="Pot with Heart" width="300" height="152">
+![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/pot.png?raw=true)
+![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/potWithHeart.png?raw=true)
 
 ### La Prueba
 
 - Se ha creado un spawn de enemigos en el cual el jugador debe aguantar lo máximo posible para conseguir la máxima puntuación, siempre pudiendo salir de esa 'habitación' cuando se quiera. Los enemigos hacen spawn aleatoriamente en una de las cuatro esquinas de esta 'habitación' hasta que haya un máximo de 12 en la estancia. El proceso de spawn se realiza infinitamente mientras el número de enemigos sea menor que 12 hasta que el jugador muere en la prueba o simplemente se vaya.
 
-<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/PreviewImages/trial.png" alt="Trial" width="436" height="152">
+![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/trial.png?raw=true)
 
 ### Non-Playable Characters (NPCs)
 
 - Se han añadido NPCs con los que interactuar con diálogos. Hay dos tipos: NPCs que se mueven por un camino predeterminado y paran cuando te ven; y NPC que simplemente se quedan en su sitio. Se interactúa con ellos automáticamente al pasar cerca. Todos los NPC al hablar con ellos te miran y cuando te vas, vuelven a su estado normal.
 
-<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/PreviewImages/dialog.png" alt="Dialog" width="436" height="152">
+![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/dialog.png?raw=true)
 
 - Se han añadido Custom Sprites para los NPC que hemos personalizado con la temática de nuestros amigos de la carrera.
 
-<img src="https://github.com/gabrielglbh/OddWorld-Unity/tree/main/Assets/PreviewImages/world.png" alt="World" width="436" height="152">
+![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/world.png?raw=true)
