@@ -32,15 +32,17 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 - Se han creado varios TileMaps para crear el mapa. Cada uno de ellos consta de un mapa de colisiones (TileMap Collider 2D con Composite Collider), un mapa de suelo por donde el jugador puede moverse y un mapa de decoraciones.
 
-### Hitboxes
+### Hitboxes y Vida
 
 - Se han creado HitBoxes para las 4 animaciones de ataque con Polygon Collider 2D. La hitbox se activa en la animación. Empuja y daña a los enemigos.
 
 - Los enemigos y el jugador tienen Hurtbox (Collision Box 2D), de tal manera que el enemigo pueda dañar al jugador, evento que se observa mediante OnTriggerEnter2D.
 
+- El jugador tiene 5 corazones y cada enemigo tiene 3 corazones. El ataque del jugador quita 1 corazón entero al enemigo y un enemigo quita medio corazón al jugador cada vez que le ataca.
+
 ### Diálogos
 
-- Se han creado cuadros de dialogo con distintos elementos del juego (señales, estatuas, NPCs) con los que interactuar en el mundo.
+- Se han creado cuadros de dialogo con distintos elementos del juego (señales, estatuas, NPCs) con los que interactuar en el mundo. Estos cuadros se pueden activar automáticamente o pulsando la A.
 
 ### IA
 
@@ -79,6 +81,6 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 ![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/dialog.png?raw=true)
 
-- Se han añadido Custom Sprites para los NPC que hemos personalizado con la temática de nuestros amigos de la carrera.
+- Se han añadido Custom Sprites para todos los NPC que hemos personalizado con la temática de nuestros amigos de la carrera. Estos sprites se han realizado con [Piskel](https://www.piskelapp.com/)
 
 ![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/world.png?raw=true)
