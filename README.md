@@ -87,4 +87,9 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 - Se han añadido Custom Sprites para todos los NPC que hemos personalizado con la temática de nuestros amigos de la carrera. Estos sprites se han realizado con [Piskel](https://www.piskelapp.com/)
 
-![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/world.png?raw=true)
+![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/fer.png?raw=true)
+![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/gabo.png?raw=true)
+![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/guille.png?raw=true)
+![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/isma.png?raw=true)
+![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/sergio.png?raw=true)
+![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/toni.png?raw=true)
