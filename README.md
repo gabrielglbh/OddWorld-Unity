@@ -50,7 +50,7 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 ### IA
 
-- IA enemigos simple: Te persiguen si estás dentro de su rango.
+- IA enemigos simple: Te persiguen si estás dentro de su rango. Se calcula la distancia entre el enemigo y el jugador, y si está dentro de un rango de activacion, se calcula el vector que los une y el enemigo lo recorre.
 
 ### Eventos y Observadores con ScriptableObjects
 
@@ -85,7 +85,7 @@ Un juego estilo Zelda con los sprites sacados de [OpenGameArt](https://opengamea
 
 ![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/dialog.png?raw=true)
 
-- Se han añadido Custom Sprites para todos los NPC que hemos personalizado con la temática de nuestros amigos de la carrera. Estos sprites se han realizado con [Piskel](https://www.piskelapp.com/)
+- Se han añadido Custom Sprites para todos los NPC que hemos personalizado con la temática de nuestros amigos de la carrera. Estos sprites se han realizado con [Piskel](https://www.piskelapp.com/). Todos los sprites tienen animación para andar, como se notará al jugar.
 
 ![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/fer.png?raw=true)
 ![](https://github.com/gabrielglbh/OddWorld-Unity/blob/main/Assets/PreviewImages/gabo.png?raw=true)
