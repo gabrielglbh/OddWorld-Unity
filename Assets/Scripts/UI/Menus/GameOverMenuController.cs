@@ -17,7 +17,7 @@ public class GameOverMenuController : MenuController
     public void CreateGameOverMenu()
     {
         CreateMenu();
-        data.text = "Tiempo Total: " + elapsedTime.text + " segundos " +
+        data.text = "Tiempo Total (s): " + elapsedTime.text +
                     "\nPuntos Totales: " + points.text;
     }
 
